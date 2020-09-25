@@ -1,0 +1,71 @@
+$main_width:768px;
+
+%flex_row {
+    display: flex;
+    flex-direction: row;
+}
+
+%font-Geometria {
+    font-family: Geometria;
+    font-size: 12px;
+    color: #8B7EAC;
+    font-weight: bold;
+}
+
+body,
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+:focus {
+    outline: none;
+}
+
+.page__wrapper {
+    width: $main_width;
+    margin: 0 auto;
+}
+
+.line__icon {
+    width: 12.8px;
+    height: 0px;
+    border: 1px solid #8E80A9;
+    margin-bottom: 3.2px;
+
+    &--small {
+        width: 7.73px;
+        ;
+    }
+}
+
+.header {
+    background-image: url('../src/img/first_background.png');
+    width: $main_width;
+    height: 484.34px;
+
+    &__contentainer {
+        margin-left: 78.68px;
+        margin-right: 63.39px;
+        padding-top: 37.87px;
+    }
+
+    &__top {
+        @extend %flex_row;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        @extend %flex_row;
+
+        &-text {
+            margin-left: 6.24px;
+            @extend %font-Geometria;
+        }
+    }
+
+    &__phone {
+        @extend %font-Geometria;
+    }
+
+}
