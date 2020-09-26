@@ -1,3 +1,13 @@
+$font-color-darker: #8B7EAC;
+$font-color-lighter: #8E80A9;
+$font-color-white: #FFFFFF;
+$font-color-pink:#E65C7B;
+
+$background-color:#FFFFFF;
+$background-color-pink: #41303c;
+
+$button-color-pink:#E65C7B;
+
 $main_width:768px;
 
 %flex_row {
@@ -8,14 +18,22 @@ $main_width:768px;
 %font-Geometria {
     font-family: Geometria;
     font-size: 12px;
-    color: #8B7EAC;
-    font-weight: bold;
+    color: $font-color-darker;
+    font-weight: 600;
+}
+
+%font-Caveat {
+    font-family: Caveat;
+    color: $font-color-lighter;
+    font-weight: normal;
+    font-size: 24px;
 }
 
 body,
 html {
     padding: 0px;
     margin: 0px;
+    background-color: $background-color-pink;
 }
 
 :focus {
@@ -25,6 +43,8 @@ html {
 .page__wrapper {
     width: $main_width;
     margin: 0 auto;
+    
+    background-color: $background-color;
 }
 
 .line__icon {
@@ -41,10 +61,11 @@ html {
 
 .header {
     background-image: url('../src/img/first_background.png');
+    background-size: 771.85px 484.34px;
     width: $main_width;
     height: 484.34px;
 
-    &__contentainer {
+    &__container {
         margin-left: 78.68px;
         margin-right: 63.39px;
         padding-top: 37.87px;
@@ -65,6 +86,79 @@ html {
     }
 
     &__phone {
+        @extend %font-Geometria;
+    }
+
+    &__middle {
+        margin-top: 45.39px;
+    }
+
+    &__phrase {
+        margin-left: 73px;
+        @extend %font-Caveat;
+    }
+
+    &__yoga {
+        @extend %font-Geometria;
+        font-size: 144px;
+        line-height: 0px;
+        letter-spacing: 0.34em;
+        color: $font-color-white;
+        margin-left: 20px;
+        margin-top: 70.61px;
+    }
+
+    &__subscribe {
+        @extend %flex_row;
+        align-items: center;
+
+        margin-top: 75.15px;
+        margin-left: 230px;
+
+        &-button {
+            background-color: $button-color-pink;
+            color: $font-color-white;
+            width: 29.87px;
+            height: 25.6px;
+        }
+
+        &-img {
+            width: 4.8px;
+            height: 9.07px;
+            margin-left: 13.87px;
+            margin-top: 8px;
+        }
+
+        &-text {
+            @extend %font-Geometria;
+            font-size: 10px;
+            color: $font-color-pink;
+            margin-left: 7.28px;
+        }
+    }
+
+    &__bottom {
+        margin-top: 69px;
+
+        @extend %flex_row;
+        justify-content: space-between;
+
+        &-logos {
+            @extend %flex_row;
+            align-items: center;
+        }
+
+        &-logo{
+            height: 10px;
+            width: auto;
+            margin-right: 5.87px;
+            &--fb{
+                margin-left: 3px;
+            }
+        }
+    }
+
+    &__location{
         @extend %font-Geometria;
     }
 
