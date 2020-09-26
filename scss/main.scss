@@ -7,6 +7,7 @@ $background-color:#FFFFFF;
 $background-color-pink: #41303c;
 
 $button-color-pink:#E65C7B;
+$button-color-violet: #8E80A9;
 
 $main_width:768px;
 
@@ -43,7 +44,7 @@ html {
 .page__wrapper {
     width: $main_width;
     margin: 0 auto;
-    
+
     background-color: $background-color;
 }
 
@@ -55,8 +56,13 @@ html {
 
     &--small {
         width: 7.73px;
-        ;
     }
+}
+
+.block-title {
+    @extend %font-Geometria;
+    font-size: 21px;
+    color: $font-color-lighter;
 }
 
 .header {
@@ -148,18 +154,148 @@ html {
             align-items: center;
         }
 
-        &-logo{
+        &-logo {
             height: 10px;
             width: auto;
             margin-right: 5.87px;
-            &--fb{
+
+            &--fb {
                 margin-left: 3px;
             }
         }
     }
 
-    &__location{
+    &__location {
         @extend %font-Geometria;
     }
 
+}
+
+.group {
+    width: 353.59px;
+    height: 121.23px;
+    box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+    background-color: $background-color;
+    margin-bottom: 18.86px;
+
+    @extend %flex_row;
+
+    &-photo {
+        &__img {
+            width: 148.17px;
+            height: 121.23px;
+
+            &--big {
+                width: 246.51px;
+                height: 209.46px;
+            }
+        }
+    }
+
+    &-info {
+        width: 205.42px;
+        height: 121.23px;
+
+        &--big {
+            width: 246.51px;
+        }
+    }
+
+    &-text {
+        width: 172px;
+        margin-left: 24.42px;
+        margin-top: 19.04px;
+    }
+
+    &-title {
+        @extend %font-Geometria;
+        font-size: 12px;
+        color: $font-color-lighter;
+    }
+
+    &-time {
+        @extend %font-Geometria;
+        font-size: 10px;
+        color: $font-color-lighter;
+        margin-top: 9px;
+        font-weight: normal;
+    }
+
+    &-trainer {
+        @extend %font-Geometria;
+        font-size: 10px;
+        color: $font-color-pink;
+        margin-top: 10px;
+        font-weight: normal;
+    }
+
+    &-button {
+        width: 30.31px;
+        height: 20.21px;
+        background-color: $button-color-violet;
+        margin-top: -22px;
+        margin-left: auto;
+        margin-right: 35px;
+
+        &--big {
+            width: 43.1px;
+            height: 124px;
+            margin-top: -111px;
+            margin-left: auto;
+            margin-right: 0px;
+        }
+
+        &-img {
+            width: 5.39px;
+            height: 8.76px;
+            margin-top: 6.06px;
+            margin-left: 13.47px;
+
+            &--big {
+                margin-top: 55.9px;
+                margin-left: 18.86px;
+            }
+        }
+    }
+
+    &--big {
+        flex-direction: column;
+        width: 246.51px;
+        height: 332.04px;
+    }
+}
+
+.directions {
+    width: $main_width;
+    margin-top: -60px;
+
+    &__title {
+        margin: 0 auto;
+        width: 147px;
+        height: 10px;
+        margin-top: 10px;
+    }
+
+    &__content {
+        width: 620px;
+        margin: 0 auto;
+        margin-top: 43.96px;
+
+        @extend %flex_row;
+
+        &-right {
+            margin-left: 22.9px;
+        }
+    }
+
+    &__more-button {
+        width: 350.9px;
+        height: 32.33px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+        border: none;
+        @extend %font-Geometria;
+        font-size: 10px;
+        margin-top: 19.86px;
+    }
 }

@@ -1,9 +1,9 @@
-.header__top, .header__menu, .header__subscribe, .header__bottom, .header__bottom-logos {
+.header__top, .header__menu, .header__subscribe, .header__bottom, .header__bottom-logos, .group, .directions__content {
   display: flex;
   flex-direction: row;
 }
 
-.header__menu-text, .header__phone, .header__yoga, .header__subscribe-text, .header__location {
+.block-title, .header__menu-text, .header__phone, .header__yoga, .header__subscribe-text, .header__location, .group-title, .group-time, .group-trainer, .directions__more-button {
   font-family: Geometria;
   font-size: 12px;
   color: #8B7EAC;
@@ -42,6 +42,11 @@ html {
 }
 .line__icon--small {
   width: 7.73px;
+}
+
+.block-title {
+  font-size: 21px;
+  color: #8E80A9;
 }
 
 .header {
@@ -111,4 +116,106 @@ html {
 }
 .header__bottom-logo--fb {
   margin-left: 3px;
+}
+
+.group {
+  width: 353.59px;
+  height: 121.23px;
+  box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+  background-color: #FFFFFF;
+  margin-bottom: 18.86px;
+}
+.group-photo__img {
+  width: 148.17px;
+  height: 121.23px;
+}
+.group-photo__img--big {
+  width: 246.51px;
+  height: 209.46px;
+}
+.group-info {
+  width: 205.42px;
+  height: 121.23px;
+}
+.group-info--big {
+  width: 246.51px;
+}
+.group-text {
+  width: 172px;
+  margin-left: 24.42px;
+  margin-top: 19.04px;
+}
+.group-title {
+  font-size: 12px;
+  color: #8E80A9;
+}
+.group-time {
+  font-size: 10px;
+  color: #8E80A9;
+  margin-top: 9px;
+  font-weight: normal;
+}
+.group-trainer {
+  font-size: 10px;
+  color: #E65C7B;
+  margin-top: 10px;
+  font-weight: normal;
+}
+.group-button {
+  width: 30.31px;
+  height: 20.21px;
+  background-color: #8E80A9;
+  margin-top: -22px;
+  margin-left: auto;
+  margin-right: 35px;
+}
+.group-button--big {
+  width: 43.1px;
+  height: 124px;
+  margin-top: -111px;
+  margin-left: auto;
+  margin-right: 0px;
+}
+.group-button-img {
+  width: 5.39px;
+  height: 8.76px;
+  margin-top: 6.06px;
+  margin-left: 13.47px;
+}
+.group-button-img--big {
+  margin-top: 55.9px;
+  margin-left: 18.86px;
+}
+.group--big {
+  flex-direction: column;
+  width: 246.51px;
+  height: 332.04px;
+}
+
+.directions {
+  width: 768px;
+  margin-top: -60px;
+}
+.directions__title {
+  margin: 0 auto;
+  width: 147px;
+  height: 10px;
+  margin-top: 10px;
+}
+.directions__content {
+  width: 620px;
+  margin: 0 auto;
+  margin-top: 43.96px;
+}
+.directions__content-right {
+  margin-left: 22.9px;
+}
+.directions__more-button {
+  width: 350.9px;
+  height: 32.33px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+  border: none;
+  font-size: 10px;
+  margin-top: 19.86px;
 }
