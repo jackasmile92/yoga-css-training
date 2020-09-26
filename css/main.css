@@ -1,9 +1,9 @@
-.header__top, .header__menu, .header__subscribe, .header__bottom, .header__bottom-logos, .group, .directions__content {
+.header__top, .header__menu, .header__subscribe, .header__bottom, .header__bottom-logos, .group, .directions__content, .footer__content, .footer__bottom, .footer__socials {
   display: flex;
   flex-direction: row;
 }
 
-.block-title, .header__menu-text, .header__phone, .header__yoga, .header__subscribe-text, .header__location, .group-title, .group-time, .group-trainer, .directions__more-button {
+.block-title, .header__menu-text, .header__phone, .header__yoga, .header__subscribe-text, .header__location, .group-title, .group-time, .group-trainer, .directions__more-button, .footer__content, .footer__bottom {
   font-family: Geometria;
   font-size: 12px;
   color: #8B7EAC;
@@ -218,4 +218,46 @@ html {
   border: none;
   font-size: 10px;
   margin-top: 19.86px;
+}
+
+.footer {
+  width: 768px;
+  height: 271px;
+  background-color: #8373A1;
+  padding-top: 75px;
+}
+.footer__content {
+  color: #FFFFFF;
+  font-weight: normal;
+  margin-left: 78px;
+}
+.footer__content-right {
+  margin-left: 61px;
+}
+.footer__text {
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+.footer__smaller-text {
+  font-size: 12px;
+}
+.footer__bottom {
+  color: #FFFFFF;
+  font-weight: normal;
+  margin-left: 78px;
+  margin-top: 18.61px;
+}
+.footer__pale-text {
+  opacity: 0.5;
+  margin-right: 40px;
+}
+.footer__social {
+  margin-right: 15px;
+}
+.footer__socials {
+  align-content: center;
+}
+.footer__icon {
+  height: 10px;
+  width: auto;
 }

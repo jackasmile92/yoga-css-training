@@ -3,6 +3,7 @@ $font-color-lighter: #8E80A9;
 $font-color-white: #FFFFFF;
 $font-color-pink:#E65C7B;
 
+$background-color-footer:#8373A1;
 $background-color:#FFFFFF;
 $background-color-pink: #41303c;
 
@@ -297,5 +298,62 @@ html {
         @extend %font-Geometria;
         font-size: 10px;
         margin-top: 19.86px;
+    }
+}
+
+.footer {
+    width: $main_width;
+    height: 271px;
+    background-color: $background-color-footer;
+    padding-top: 75px;
+
+    &__content {
+        @extend %font-Geometria;
+        @extend %flex_row;
+        color: $font-color-white;
+        font-weight: normal;
+
+        margin-left: 78px;
+
+        &-right{
+            margin-left: 61px;
+        }
+    }
+
+    &__text{
+        font-size: 14px;
+        margin-bottom: 32px;
+    }
+
+    &__smaller-text{
+        font-size: 12px;
+    }
+
+    &__bottom {
+        @extend %font-Geometria;
+        @extend %flex_row;
+        color: $font-color-white;
+        font-weight: normal;
+        margin-left: 78px;
+        margin-top: 18.61px;
+
+    }
+
+    &__pale-text{
+        opacity: 0.5;
+        margin-right: 40px;
+    }
+
+    &__social{
+        margin-right: 15px;
+        &s{
+            @extend %flex_row;
+            align-content: center;
+        }
+    }
+
+    &__icon{
+        height: 10px;
+        width: auto;
     }
 }
