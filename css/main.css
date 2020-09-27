@@ -1,9 +1,9 @@
-.header__top, .header__menu, .header__subscribe, .header__bottom, .header__bottom-logos, .group, .directions__content, .footer__content, .footer__bottom, .footer__socials {
+.header__top, .header__menu, .header__subscribe, .header__bottom, .header__bottom-logos, .group, .directions__content, .subscription__durations, .subscription__time, .footer__content, .footer__bottom, .footer__socials {
   display: flex;
   flex-direction: row;
 }
 
-.block-title, .header__menu-text, .header__phone, .header__yoga, .header__subscribe-text, .header__location, .group-title, .group-time, .group-trainer, .directions__more-button, .footer__content, .footer__bottom {
+.block-title, .header__menu-text, .header__phone, .header__yoga, .header__subscribe-text, .header__location, .group-title, .group-time, .group-trainer, .directions__more-button, .time, .subscription__duration, .footer__content, .footer__bottom {
   font-family: Geometria;
   font-size: 12px;
   color: #8B7EAC;
@@ -31,7 +31,7 @@ html {
 .page__wrapper {
   width: 768px;
   margin: 0 auto;
-  background-color: #FFFFFF;
+  background-color: #FCF8FE;
 }
 
 .line__icon {
@@ -218,6 +218,83 @@ html {
   border: none;
   font-size: 10px;
   margin-top: 19.86px;
+}
+
+.time {
+  width: 176.09px;
+  height: 158.69px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.time--active {
+  width: 221.62px;
+  height: 221.62px;
+}
+.time__button {
+  width: 149.31px;
+  height: 34.82px;
+  border: none;
+  font-size: 10px;
+  color: #FFFFFF;
+  background-color: #8E80A9;
+  margin-top: 15px;
+}
+.time__title {
+  font-size: 18px;
+  margin-top: 27.62px;
+  margin-bottom: 15px;
+}
+.time__interval {
+  text-align: center;
+  line-height: 15px;
+  font-size: 10px;
+  color: #E65C7B;
+  margin-bottom: 12px;
+}
+.time__price {
+  font-size: 21px;
+}
+
+.subscription {
+  width: 768px;
+  height: 445.93px;
+  background-image: url("../src/img/subscr_back.png");
+  margin-top: 100px;
+}
+.subscription__title {
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 138px;
+  height: 10px;
+}
+.subscription__durations {
+  justify-content: space-between;
+  padding-top: 23px;
+  width: 261px;
+  height: 14px;
+  margin: 0 auto;
+  padding-left: 25px;
+  margin-bottom: 46px;
+}
+.subscription__duration {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #E65C7B;
+  margin-right: 25px;
+}
+.subscription__duration--active {
+  border-bottom: 1px solid #E65C7B;
+  padding-bottom: 25px;
+}
+.subscription__time {
+  justify-content: space-between;
+  width: 623.09px;
+  height: 221.62px;
+  margin: 0 auto;
 }
 
 .footer {

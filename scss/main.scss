@@ -5,6 +5,7 @@ $font-color-pink:#E65C7B;
 
 $background-color-footer:#8373A1;
 $background-color:#FFFFFF;
+$background-color-light:#FCF8FE;
 $background-color-pink: #41303c;
 
 $button-color-pink:#E65C7B;
@@ -46,7 +47,7 @@ html {
     width: $main_width;
     margin: 0 auto;
 
-    background-color: $background-color;
+    background-color: $background-color-light;
 }
 
 .line__icon {
@@ -301,6 +302,98 @@ html {
     }
 }
 
+.time {
+    width: 176.09px;
+    height: 158.69px;
+    background: $background-color;
+    box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @extend %font-Geometria;
+
+    &--active {
+        width: 221.62px;
+        height: 221.62px;
+    }
+
+    &__button {
+        width: 149.31px;
+        height: 34.82px;
+        border: none;
+        font-size: 10px;
+        color: $font-color-white;
+        background-color: $button-color-violet;
+        margin-top: 15px;
+    }
+
+    &__title {
+        font-size: 18px;
+        margin-top: 27.62px;
+        margin-bottom: 15px;
+    }
+
+    &__interval {
+        text-align: center;
+        line-height: 15px;
+        font-size: 10px;
+        color: $font-color-pink;
+        margin-bottom: 12px;
+    }
+
+    &__price {
+        font-size: 21px;
+    }
+}
+
+.subscription {
+    width: $main_width;
+    height: 445.93px;
+    background-image: url('../src/img/subscr_back.png');
+    margin-top: 100px;
+
+    &__title {
+        margin: 0 auto;
+        margin-top: 15px;
+        width: 138px;
+        height: 10px;
+    }
+
+    &__durations {
+        @extend %flex_row;
+        justify-content: space-between;
+        padding-top: 23px;
+        width: 261px;
+        height: 14px;
+        margin: 0 auto;
+        padding-left: 25px;
+        margin-bottom: 46px;
+    }
+
+    &__duration {
+        @extend %font-Geometria;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: $font-color-pink;
+        margin-right: 25px;
+        
+
+        &--active {
+            border-bottom: 1px solid $font-color-pink;
+            padding-bottom: 25px;
+        }
+    }
+
+    &__time {
+        @extend %flex_row;
+        justify-content: space-between;
+        width: 623.09px;
+        height: 221.62px;
+        margin: 0 auto;
+    }
+}
+
 .footer {
     width: $main_width;
     height: 271px;
@@ -315,17 +408,17 @@ html {
 
         margin-left: 78px;
 
-        &-right{
+        &-right {
             margin-left: 61px;
         }
     }
 
-    &__text{
+    &__text {
         font-size: 14px;
         margin-bottom: 32px;
     }
 
-    &__smaller-text{
+    &__smaller-text {
         font-size: 12px;
     }
 
@@ -339,20 +432,21 @@ html {
 
     }
 
-    &__pale-text{
+    &__pale-text {
         opacity: 0.5;
         margin-right: 40px;
     }
 
-    &__social{
+    &__social {
         margin-right: 15px;
-        &s{
+
+        &s {
             @extend %flex_row;
             align-content: center;
         }
     }
 
-    &__icon{
+    &__icon {
         height: 10px;
         width: auto;
     }
