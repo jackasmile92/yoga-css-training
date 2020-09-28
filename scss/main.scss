@@ -377,7 +377,7 @@ html {
         line-height: 20px;
         color: $font-color-pink;
         margin-right: 25px;
-        
+
 
         &--active {
             border-bottom: 1px solid $font-color-pink;
@@ -449,5 +449,55 @@ html {
     &__icon {
         height: 10px;
         width: auto;
+    }
+}
+
+.signup {
+    width: $main_width;
+    height: 475px;
+    background-image: url('../src/img/subscribe.png');
+    background-size: cover;
+
+    background-position-x: center;
+    padding-top: 70px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        width: 411px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 41px;
+    }
+
+    &__button {
+        width: 407px;
+        margin: 0 auto;
+        margin-top: 20px;
+        height: 56px;
+        @extend %font-Geometria;
+        font-size: 14px;
+        color: $font-color-white;
+        background-color: $button-color-pink;
+        border: none;
+    }
+
+    &__input {
+        @extend %font-Geometria;
+        background: transparent;
+        font-size: 14px;
+        
+        border: none;
+        border-bottom: 1px solid $font-color-lighter;
+        padding-bottom: 15px;
+        margin-bottom: 47px;
+        &::placeholder {
+            color: $font-color-lighter;
+            opacity: 0.4;
+          }
     }
 }
