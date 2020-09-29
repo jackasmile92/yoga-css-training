@@ -38,14 +38,14 @@ html {
     padding: 0px;
     margin: 0px;
     background-color: $background-color-pink;
-    cursor: default ;
+    cursor: default;
 }
 
 :focus {
     outline: none;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
@@ -589,6 +589,7 @@ button{
 
     &__nav {
         @extend %flex_row;
+
         &-text {
             @extend %font-Geometria;
             font-size: 12px;
@@ -609,7 +610,7 @@ button{
                 margin-left: 9.44px;
             }
 
-            &--left{
+            &--left {
                 border: 1px solid $button-color-violet;
                 background-color: $button-color-white;
                 color: $font-color-lighter;
@@ -620,7 +621,7 @@ button{
 
 }
 
-.nav__team{
+.nav__team {
     margin-left: 169px;
 }
 
@@ -666,4 +667,101 @@ button{
     color: $font-color-lighter;
     line-height: 16px;
     margin-bottom: 19px;
+}
+
+
+.comment {
+    &__logo {
+        font-family: Francois One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 80px;
+        line-height: 15px;
+        color: rgba(142, 128, 169, 0.39);
+
+    }
+
+    &__content {
+        margin-left: 87px;
+        margin-top: 55px;
+    }
+
+    &__text {
+        width: 298px;
+        height: 140px;
+        @extend %font-Geometria;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+
+    &__bottom {
+        @extend %flex_row;
+        margin-top: 12px;
+
+        &-icon img {
+            width: 52px;
+            height: 51px;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+
+        &-info {
+            margin-left: 13px;
+        }
+
+        &-name {
+            @extend %font-Geometria;
+            font-size: 12px;
+            color: $font-color-pink;
+            font-weight: 500;
+        }
+
+        &-date {
+            @extend %font-Geometria;
+            font-size: 10px;
+        }
+
+        &-socials {
+            margin-top: 8px;
+        }
+    }
+}
+
+.social__bottom {
+    height: 8px;
+    margin-right: 8px;
+}
+
+.feedback {
+    width: $main_width;
+    padding-top: 137.66px;
+    padding-bottom: 147.66px;
+
+
+    &__content {
+        width: 442px;
+        margin: 0 auto;
+    }
+
+    &__nav {
+        padding-top: 41px;
+        margin: 0 auto;
+        width: 104.18px;
+    }
+
+    &__title {
+        width: 85px;
+        margin: 0 auto;
+        margin-bottom: 38px;
+    }
+
+    &__comment {
+        width: 442px;
+        height: 315px;
+        background: $background-color;
+        box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+        padding-top: 15px;
+        margin-bottom: 18px;
+    }
 }
